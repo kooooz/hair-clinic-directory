@@ -438,7 +438,7 @@ export default function ClinicPage({ params }: Props) {
                   </Button>
                 </a>
                 <a
-                  href={`https://wa.me/${clinicDetail.whatsapp.replace(/\+/g, "")}`}
+                  href={`https://wa.me/${clinicDetail.whatsapp.replace(/[^0-9]/g, "")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

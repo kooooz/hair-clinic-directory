@@ -43,8 +43,8 @@ export function ClinicsList() {
 
                     {/* Right part - Content */}
                     <CardContent className="p-6 md:w-3/5 flex flex-col relative">
-                      {/* Ratings - top right */}
-                      <div className="absolute top-4 right-4 flex items-center space-x-4">
+                      {/* Ratings - moved below name for mobile */}
+                      <div className="md:absolute md:top-4 md:right-4 flex items-center space-x-4 mb-4 md:mb-0">
                         <div className="flex items-center">
                           <span className="font-mono text-xs mr-1">Google:</span>
                           <Star className="h-4 w-4 text-yellow-400 fill-yellow-400 mr-1" />
@@ -58,7 +58,7 @@ export function ClinicsList() {
                       </div>
 
                       {/* Clinic name and location */}
-                      <div className="mb-4 pr-16">
+                      <div className="mb-4">
                         <h3 className="font-heading text-lg mb-1">
                           <a
                             href={clinic.website}
@@ -119,10 +119,13 @@ export function ClinicsList() {
                       </div>
 
                       {/* Price and CTA */}
-                      <div className="flex items-center justify-between mt-auto pt-2">
-                        <span className="font-mono text-sm font-semibold">{clinic.startingPrice}</span>
-                        <Link href={`/klinik/${clinic.id}#top`} aria-label={`Details zu ${clinic.name} anzeigen`}>
-                          <Button className="rounded-full font-mono text-xs">
+                      <div className="mt-auto">
+                        <div className="mb-4 md:hidden">
+                          <p className="font-mono text-sm text-gray-600">Preis</p>
+                          <p className="font-mono font-semibold">{clinicDetail?.startingPrice}</p>
+                        </div>
+                        <Link href={`/klinik/${clinic.id}`}>
+                          <Button className="w-full font-mono text-xs rounded-full bg-black text-white hover:bg-gray-800">
                             Alle Details zu {clinic.name} ansehen
                           </Button>
                         </Link>

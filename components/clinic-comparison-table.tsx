@@ -392,7 +392,7 @@ export function ClinicComparisonTable() {
                         </Button>
                       </a>
                       <a
-                        href={`https://wa.me/${clinic.whatsapp.replace(/\+/g, "")}`}
+                        href={`https://wa.me/${clinic.whatsapp.replace(/[^0-9]/g, "")}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -626,7 +626,7 @@ export function ClinicComparisonTable() {
                             <div className="flex items-center">
                               <Phone className="h-3 w-3 mr-1" />
                               <a
-                                href={`https://wa.me/${clinic.whatsapp.replace(/\+/g, "")}`}
+                                href={`https://wa.me/${clinic.whatsapp.replace(/[^0-9]/g, "")}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:underline"

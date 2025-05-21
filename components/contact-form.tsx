@@ -72,7 +72,7 @@ export function ContactForm() {
         </div>
         <h3 className="font-body text-lg mb-2">Nachricht gesendet!</h3>
         <p className="font-mono text-sm mb-6">
-          Vielen Dank für deine Nachricht. Wir werden uns so schnell wie möglich bei dir melden.
+          Vielen Dank für Deine Nachricht. Wir werden uns schnellst möglich bei Dir melden.
         </p>
         <Button variant="outline" className="rounded-full font-mono text-xs" onClick={() => setIsSubmitted(false)}>
           Neue Nachricht senden
