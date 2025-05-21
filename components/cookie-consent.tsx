@@ -9,31 +9,29 @@ export function CookieConsent() {
   useEffect(() => {
     // Check if user has already consented
     const hasConsented = localStorage.getItem("cookieConsent")
+    console.log('Initial cookie consent state:', hasConsented)
     if (!hasConsented) {
       setIsVisible(true)
     }
   }, [])
 
-  const handleAccept = () => {
+  const handleAcceptAll = () => {
+    console.log('Setting cookie and analytics consent')
     // Set both cookie and analytics consent
     localStorage.setItem("cookieConsent", "true")
     localStorage.setItem("analyticsConsent", "true")
     
-    // Initialize Google Analytics immediately
-    window.dataLayer = window.dataLayer || []
-    function gtag(...args: any[]) {
-      window.dataLayer.push(args)
-    }
-    gtag("js", new Date())
-    gtag("config", process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string, {
-      page_path: window.location.pathname,
-    })
+    // Reload the page to initialize Google Analytics
+    window.location.reload()
     
-    // Track the consent event
-    gtag("event", "consent_given", {
-      event_category: "Consent",
-      event_label: "Cookie and Analytics Consent"
-    })
+    setIsVisible(false)
+  }
+
+  const handleAcceptNecessary = () => {
+    console.log('Setting only necessary cookie consent')
+    // Set only necessary cookie consent
+    localStorage.setItem("cookieConsent", "true")
+    localStorage.setItem("analyticsConsent", "false")
     
     setIsVisible(false)
   }
@@ -46,16 +44,28 @@ export function CookieConsent() {
         <div className="flex flex-col md:flex-row items-start justify-between gap-4">
           <div className="flex-1">
             <p className="font-mono text-sm text-gray-600">
-              Wir verwenden Cookies und Google Analytics, um Ihnen das beste Nutzererlebnis zu ermöglichen und unsere Website zu verbessern. Durch die weitere Nutzung der Website stimmen Sie der Verwendung von Cookies und Google Analytics zu. Weitere Informationen zu Cookies und Google Analytics erhalten Sie in unserer{" "}
+              Wir verwenden Cookies und Google Analytics, um Ihnen das beste Nutzererlebnis zu ermöglichen und unsere Website zu verbessern. Sie können zwischen der Akzeptanz aller Cookies oder nur der notwendigen Cookies wählen. Weitere Informationen zu Cookies und Google Analytics erhalten Sie in unserer{" "}
               <a href="/datenschutz" className="text-[#ff4d00] hover:underline">
                 Datenschutzerklärung
               </a>
               .
             </p>
           </div>
-          <Button onClick={handleAccept} className="rounded-full font-mono text-xs whitespace-nowrap">
-            Akzeptieren
-          </Button>
+          <div className="flex gap-2">
+            <Button 
+              onClick={handleAcceptNecessary} 
+              variant="outline"
+              className="rounded-full font-mono text-xs whitespace-nowrap"
+            >
+              Nur erforderliche
+            </Button>
+            <Button 
+              onClick={handleAcceptAll} 
+              className="rounded-full font-mono text-xs whitespace-nowrap"
+            >
+              Alle akzeptieren
+            </Button>
+          </div>
         </div>
       </div>
     </div>
