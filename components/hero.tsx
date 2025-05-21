@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="relative w-full min-h-[140vh] pt-48">
+    <section className="relative w-full min-h-[140vh] pt-32 md:pt-48">
       <div className="absolute inset-0 z-0 mt-32">
         <img
           src="/vorher-haartransplantation-istanbul.jpg"
