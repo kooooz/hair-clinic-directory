@@ -10,14 +10,19 @@ import { CookieConsent } from "@/components/cookie-consent"
 import { WebsiteJsonLd } from "@/components/website-json-ld"
 import { FaqJsonLd } from "@/components/faq-json-ld"
 import { HowToJsonLd } from "@/components/howto-json-ld"
+import { LanguageProvider } from '@/contexts/language-context'
+import { metadata as baseMetadata } from './metadata'
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Beste Haarkliniken in der Türkei | Haartransplantation in Istanbul",
-  description:
-    "Finde die beste Haarklinik in der Türkei für deine Haartransplantation. Vergleiche Top-Kliniken in Istanbul und treffe eine fundierte Entscheidung.",
-  generator: 'v0.dev'
+  ...baseMetadata.de,
+  alternates: {
+    languages: {
+      'de': '/',
+      'en': '/en',
+    },
+  },
 }
 
 export default function RootLayout({
@@ -43,15 +48,17 @@ export default function RootLayout({
         <SocialMetaTags title={metadata.title} description={metadata.description} url={baseUrl} imageUrl={ogImageUrl} />
       </head>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <CookieConsent />
-          <WebsiteJsonLd />
-          <FaqJsonLd />
-          <HowToJsonLd />
-        </ThemeProvider>
+        <LanguageProvider>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <CookieConsent />
+            <WebsiteJsonLd />
+            <FaqJsonLd />
+            <HowToJsonLd />
+          </ThemeProvider>
+        </LanguageProvider>
       </body>
     </html>
   )

@@ -432,7 +432,7 @@ export default function ClinicPage({ params }: Props) {
               <div className="space-y-3 mb-6">
                 <a href={`mailto:${clinicDetail.email}`}>
                   <Button
-                    className="w-full rounded-full font-mono text-xs flex items-center justify-center border border-input bg-background hover:bg-accent hover:text-accent-foreground"
+                    className="w-full rounded-full font-mono text-xs flex items-center justify-center border border-input bg-background text-black hover:bg-accent"
                   >
                     {clinicDetail.email}
                   </Button>
@@ -443,7 +443,7 @@ export default function ClinicPage({ params }: Props) {
                   rel="noopener noreferrer"
                 >
                   <Button
-                    className="w-full rounded-full font-mono text-xs flex items-center justify-center border border-input bg-background hover:bg-accent hover:text-accent-foreground"
+                    className="w-full rounded-full font-mono text-xs flex items-center justify-center border border-input bg-background text-black hover:bg-accent"
                   >
                     {clinicDetail.whatsapp}
                   </Button>
@@ -451,7 +451,7 @@ export default function ClinicPage({ params }: Props) {
                 {instagramLinks[clinic.id] && (
                   <a href={instagramLinks[clinic.id]} target="_blank" rel="noopener noreferrer">
                     <Button
-                      className="w-full rounded-full font-mono text-xs flex items-center justify-center border border-input bg-background hover:bg-accent hover:text-accent-foreground"
+                      className="w-full rounded-full font-mono text-xs flex items-center justify-center border border-input bg-background text-black hover:bg-accent"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -480,7 +480,7 @@ export default function ClinicPage({ params }: Props) {
                   <Button className="w-full rounded-full font-mono text-xs">Offizielle Website besuchen</Button>
                 </a>
                 <a href={clinic.googleMapsUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="w-full rounded-full font-mono text-xs border border-input bg-background hover:bg-accent hover:text-accent-foreground">
+                  <Button className="w-full rounded-full font-mono text-xs border border-input bg-background text-black hover:bg-accent">
                     Standort auf Google Maps
                   </Button>
                 </a>
