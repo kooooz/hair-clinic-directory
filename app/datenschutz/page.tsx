@@ -94,7 +94,19 @@ export default function DatenschutzPage() {
                 die Benutzerfreundlichkeit und Sicherheit dieser Website.
               </p>
               <p className="mb-4 font-mono text-xs">
-                Gängige Browser bieten die Einstellungsoption, Cookies nicht zuzulassen. Hinweis: Es ist nicht
+                Wir verwenden zwei Arten von Cookies:
+              </p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li className="font-mono text-xs">
+                  <strong>Notwendige Cookies:</strong> Diese sind für den Betrieb der Website erforderlich und können nicht deaktiviert werden.
+                </li>
+                <li className="font-mono text-xs">
+                  <strong>Analyse-Cookies:</strong> Diese helfen uns, die Nutzung unserer Website zu verstehen und zu verbessern. Sie werden nur mit Ihrer Einwilligung gesetzt.
+                </li>
+              </ul>
+              <p className="mb-4 font-mono text-xs">
+                Sie können Ihre Cookie-Einstellungen jederzeit über den Cookie-Banner am unteren Bildschirmrand ändern. 
+                Gängige Browser bieten auch die Einstellungsoption, Cookies nicht zuzulassen. Hinweis: Es ist nicht
                 gewährleistet, dass Sie auf alle Funktionen dieser Website ohne Einschränkungen zugreifen können, wenn
                 Sie entsprechende Einstellungen vornehmen.
               </p>
@@ -128,9 +140,11 @@ export default function DatenschutzPage() {
                 volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt.
               </p>
               <p className="mb-4 font-mono text-xs">
-                Sie können die Erfassung der durch den Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten
-                (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem
-                Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren:{" "}
+                Google Analytics wird nur mit Ihrer Einwilligung aktiviert. Sie können Ihre Einwilligung jederzeit über den
+                Cookie-Banner am unteren Bildschirmrand widerrufen. Zusätzlich können Sie die Erfassung der durch den Cookie 
+                erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die 
+                Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem folgenden Link verfügbare 
+                Browser-Plugin herunterladen und installieren:{" "}
                 <a
                   href="https://tools.google.com/dlpage/gaoptout?hl=de"
                   target="_blank"
@@ -138,6 +152,19 @@ export default function DatenschutzPage() {
                   className="text-[#ff4d00] hover:underline"
                 >
                   https://tools.google.com/dlpage/gaoptout?hl=de
+                </a>
+              </p>
+              <p className="mb-4 font-mono text-xs">
+                Die Nutzung von Google Analytics erfolgt auf Grundlage von Art. 6 Abs. 1 S. 1 lit. a DSGVO. Die Einwilligung 
+                ist jederzeit widerrufbar. Die Datenübertragung in die USA wird auf Grundlage der Standardvertragsklauseln 
+                der EU-Kommission gestützt. Details finden Sie hier:{" "}
+                <a
+                  href="https://privacy.google.com/businesses/controllerterms/mccs/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#ff4d00] hover:underline"
+                >
+                  https://privacy.google.com/businesses/controllerterms/mccs/
                 </a>
               </p>
             </section>

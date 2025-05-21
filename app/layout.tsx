@@ -12,6 +12,7 @@ import { FaqJsonLd } from "@/components/faq-json-ld"
 import { HowToJsonLd } from "@/components/howto-json-ld"
 import { LanguageProvider } from '@/contexts/language-context'
 import { metadata as baseMetadata } from './metadata'
+import { GoogleAnalytics } from "@/components/google-analytics"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -45,7 +46,12 @@ export default function RootLayout({
         <link rel="preload" href="/fonts/geist-regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 
         {/* Social Media Meta Tags */}
-        <SocialMetaTags title={metadata.title} description={metadata.description} url={baseUrl} imageUrl={ogImageUrl} />
+        <SocialMetaTags 
+          title={metadata.title as string} 
+          description={metadata.description as string} 
+          url={baseUrl} 
+          imageUrl={ogImageUrl} 
+        />
       </head>
       <body className={inter.className}>
         <LanguageProvider>
@@ -57,6 +63,9 @@ export default function RootLayout({
             <WebsiteJsonLd />
             <FaqJsonLd />
             <HowToJsonLd />
+            {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+              <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string} />
+            )}
           </ThemeProvider>
         </LanguageProvider>
       </body>
