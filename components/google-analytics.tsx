@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 declare global {
   interface Window {
     dataLayer: any[]
+    gtag: (...args: any[]) => void
   }
 }
 
@@ -13,11 +14,29 @@ export function GoogleAnalytics({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_ID: stri
   const [hasConsent, setHasConsent] = useState(false)
 
   useEffect(() => {
+    // Check for analytics consent
     const analyticsConsent = localStorage.getItem('analyticsConsent')
     setHasConsent(analyticsConsent === 'true')
-  }, [])
 
-  if (!hasConsent) return null
+    // Initialize dataLayer
+    window.dataLayer = window.dataLayer || []
+    function gtag(...args: any[]) {
+      window.dataLayer.push(arguments)
+    }
+    window.gtag = gtag
+
+    // If consent is given, initialize GA
+    if (analyticsConsent === 'true') {
+      gtag('js', new Date())
+      gtag('config', GA_MEASUREMENT_ID, {
+        page_path: window.location.pathname,
+      })
+    }
+  }, [GA_MEASUREMENT_ID])
+
+  if (!hasConsent) {
+    return null
+  }
 
   return (
     <>

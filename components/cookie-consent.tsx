@@ -17,14 +17,12 @@ export function CookieConsent() {
   useEffect(() => {
     // Check if user has already consented
     const hasConsented = localStorage.getItem("cookieConsent")
-    console.log('Initial cookie consent state:', hasConsented)
     if (!hasConsented) {
       setIsVisible(true)
     }
   }, [])
 
   const handleAcceptAll = () => {
-    console.log('Setting cookie and analytics consent')
     // Set both cookie and analytics consent
     localStorage.setItem("cookieConsent", "true")
     localStorage.setItem("analyticsConsent", "true")
@@ -36,7 +34,6 @@ export function CookieConsent() {
   }
 
   const handleAcceptNecessary = () => {
-    console.log('Setting only necessary cookie consent')
     // Set only necessary cookie consent
     localStorage.setItem("cookieConsent", "true")
     localStorage.setItem("analyticsConsent", "false")
@@ -91,7 +88,7 @@ export function CookieConsent() {
       </div>
 
       <Dialog open={showDetails} onOpenChange={setShowDetails}>
-        <DialogContent className="max-w-2xl">
+        <DialogContent>
           <DialogHeader>
             <DialogTitle>Cookie-Details</DialogTitle>
           </DialogHeader>
@@ -99,13 +96,13 @@ export function CookieConsent() {
             <div>
               <h3 className="font-semibold mb-2">Notwendige Cookies</h3>
               <p className="text-sm text-gray-600">
-                Diese Cookies sind für den Betrieb der Website erforderlich und können nicht deaktiviert werden. Sie werden in der Regel nur als Reaktion auf von Ihnen durchgeführte Aktionen gesetzt, die einer Anforderung von Diensten entsprechen, wie z.B. das Festlegen Ihrer Datenschutzeinstellungen, das Anmelden oder das Ausfüllen von Formularen.
+                Diese Cookies sind für den Betrieb der Website erforderlich. Sie ermöglichen grundlegende Funktionen wie Sicherheit, Netzwerkmanagement und Zugänglichkeit.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-2">Analyse-Cookies</h3>
+              <h3 className="font-semibold mb-2">Analyse-Cookies (Google Analytics)</h3>
               <p className="text-sm text-gray-600">
-                Diese Cookies ermöglichen es uns, Besuche und Verkehrsquellen zu zählen, damit wir die Leistung unserer Website messen und verbessern können. Sie helfen uns zu verstehen, welche Seiten am beliebtesten und am wenigsten beliebt sind, und zu sehen, wie Besucher sich auf der Website bewegen. Alle Informationen, die diese Cookies sammeln, werden aggregiert und daher anonym.
+                Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren. Sie sammeln Informationen über die Anzahl der Besucher, die besuchten Seiten und die Zeit, die auf der Website verbracht wird.
               </p>
               <p className="text-sm text-gray-600 mt-2">
                 Wir verwenden Google Analytics, um diese Daten zu sammeln. Die Daten werden in den USA gespeichert, wobei wir die IP-Anonymisierung aktiviert haben. Sie können die Erfassung durch Google Analytics verhindern, indem Sie das{" "}
