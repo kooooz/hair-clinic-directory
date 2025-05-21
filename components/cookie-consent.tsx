@@ -8,6 +8,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
+import Link from "next/link"
 
 export function CookieConsent() {
   const [isVisible, setIsVisible] = useState(false)
@@ -52,7 +53,11 @@ export function CookieConsent() {
           <div className="flex flex-col md:flex-row items-start justify-between gap-4">
             <div className="flex-1">
               <p className="font-mono text-sm text-gray-600">
-                Wir verwenden Cookies und Google Analytics, um Ihnen das beste Nutzererlebnis zu ermöglichen und unsere Website zu verbessern. Sie können zwischen der Akzeptanz aller Cookies oder nur der notwendigen Cookies wählen. Ihre Einstellungen können Sie jederzeit über den Link "Cookie-Einstellungen" im Footer ändern. Weitere Informationen zu Cookies und Google Analytics erhalten Sie in unserer{" "}
+                Wir verwenden Cookies und Google Analytics, um Ihnen das beste Nutzererlebnis zu ermöglichen und unsere Website zu verbessern. Sie können zwischen der Akzeptanz aller Cookies oder nur der notwendigen Cookies wählen. Ihre Einstellungen können Sie jederzeit über die{" "}
+                <Link href="/cookie-einstellungen" className="text-[#ff4d00] hover:underline">
+                  Cookie-Einstellungen
+                </Link>
+                {" "}anpassen. Weitere Informationen zu Cookies und Google Analytics erhalten Sie in unserer{" "}
                 <a href="/datenschutz" className="text-[#ff4d00] hover:underline">
                   Datenschutzerklärung
                 </a>

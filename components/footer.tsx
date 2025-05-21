@@ -2,14 +2,6 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export function Footer() {
-  const handleCookieSettings = () => {
-    // Remove existing consent to show the banner again
-    localStorage.removeItem("cookieConsent")
-    localStorage.removeItem("analyticsConsent")
-    // Reload the page to show the cookie banner
-    window.location.reload()
-  }
-
   return (
     <footer className="py-8">
       <div className="container mx-auto px-4">
@@ -24,13 +16,12 @@ export function Footer() {
             <Link href="/kontakt" className="hover:text-gray-600 transition-colors">
               Kontakt
             </Link>
-            <Button 
-              variant="link" 
-              className="hover:text-gray-600 transition-colors p-0 h-auto font-body text-sm"
-              onClick={handleCookieSettings}
+            <Link 
+              href="/cookie-einstellungen" 
+              className="hover:text-gray-600 transition-colors"
             >
               Cookie-Einstellungen
-            </Button>
+            </Link>
           </div>
         </div>
       </div>
