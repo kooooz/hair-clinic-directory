@@ -231,7 +231,7 @@ export const clinicsComparisonData: ClinicComparisonData[] = [
     imageUrl: "/dr-cinik-clinic-haartransplantation-istanbul-rezeption.jpg",
     galleryImages: [
       "/dr-cinik-clinic-haartransplantation-istanbul-rezeption.jpg",
-      "/dr-cinik-clinic-haartransplantation-istanbul-behanldungszimmer.jpg",
+      "/dr-cinik-clinic-haartransplantation-istanbul-behandlungszimmer.jpg",
       "/dr-cinik-clinic-haartransplantation-istanbul-waschraum.jpg",
       "/dr-cinik-clinic-haartransplantation-istanbul-klinik.jpg"
     ]
