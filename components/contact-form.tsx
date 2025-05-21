@@ -70,9 +70,9 @@ export function ContactForm() {
         <div className="flex justify-center mb-4">
           <CheckCircle className="h-12 w-12 text-green-500" />
         </div>
-        <h3 className="font-body text-lg mb-2">Nachricht gesendet!</h3>
+        <h3 className="font-body text-lg mb-2">Vielen Dank für Ihre Nachricht!</h3>
         <p className="font-mono text-sm mb-6">
-          Vielen Dank für Deine Nachricht. Wir werden uns schnellst möglich bei Dir melden.
+          Wir haben Ihre Nachricht erhalten und werden uns schnellstmöglich bei Ihnen melden.
         </p>
         <Button variant="outline" className="rounded-full font-mono text-xs" onClick={() => setIsSubmitted(false)}>
           Neue Nachricht senden
