@@ -50,7 +50,7 @@ export function CookieConsent() {
     <>
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-50">
         <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-col md:flex-row items-start justify-between gap-4">
+          <div className="flex flex-col gap-4">
             <div className="flex-1">
               <p className="font-mono text-sm text-gray-600">
                 Wir verwenden Cookies und Google Analytics, um Ihnen das beste Nutzererlebnis zu ermöglichen und unsere Website zu verbessern. Sie können zwischen der Akzeptanz aller Cookies oder nur der notwendigen Cookies wählen. Ihre Einstellungen können Sie jederzeit über die{" "}
@@ -64,24 +64,24 @@ export function CookieConsent() {
                 .
               </p>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-col sm:flex-row gap-2">
               <Button 
                 onClick={() => setShowDetails(true)}
                 variant="outline"
-                className="rounded-full font-mono text-xs whitespace-nowrap"
+                className="rounded-full font-mono text-xs whitespace-nowrap w-full sm:w-auto"
               >
                 Cookie-Details
               </Button>
               <Button 
                 onClick={handleAcceptNecessary} 
                 variant="outline"
-                className="rounded-full font-mono text-xs whitespace-nowrap"
+                className="rounded-full font-mono text-xs whitespace-nowrap w-full sm:w-auto"
               >
                 Nur erforderliche
               </Button>
               <Button 
                 onClick={handleAcceptAll} 
-                className="rounded-full font-mono text-xs whitespace-nowrap"
+                className="rounded-full font-mono text-xs whitespace-nowrap w-full sm:w-auto"
               >
                 Alle akzeptieren
               </Button>
