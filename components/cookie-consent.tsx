@@ -7,19 +7,28 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
+  DialogFooter,
 } from "@/components/ui/dialog"
+import { Switch } from "@/components/ui/switch"
+import { Label } from "@/components/ui/label"
 import Link from "next/link"
 
 export function CookieConsent() {
   const [isVisible, setIsVisible] = useState(false)
   const [showDetails, setShowDetails] = useState(false)
+  const [necessaryCookies, setNecessaryCookies] = useState(true)
+  const [analyticsCookies, setAnalyticsCookies] = useState(false)
 
   useEffect(() => {
     // Check if user has already consented
     const hasConsented = localStorage.getItem("cookieConsent")
+    const hasAnalyticsConsent = localStorage.getItem("analyticsConsent") === "true"
+    
     if (!hasConsented) {
       setIsVisible(true)
     }
+    
+    setAnalyticsCookies(hasAnalyticsConsent)
   }, [])
 
   const handleAcceptAll = () => {
@@ -39,6 +48,16 @@ export function CookieConsent() {
     localStorage.setItem("analyticsConsent", "false")
     
     setIsVisible(false)
+  }
+
+  const handleSaveSettings = () => {
+    localStorage.setItem("cookieConsent", "true")
+    localStorage.setItem("analyticsConsent", analyticsCookies.toString())
+    
+    // Reload the page to apply changes
+    window.location.reload()
+    
+    setShowDetails(false)
   }
 
   if (!isVisible) return null
@@ -92,32 +111,52 @@ export function CookieConsent() {
           <DialogHeader>
             <DialogTitle>Cookie-Details</DialogTitle>
           </DialogHeader>
-          <div className="space-y-4">
-            <div>
-              <h3 className="font-semibold mb-2">Notwendige Cookies</h3>
-              <p className="text-sm text-gray-600">
-                Diese Cookies sind für den Betrieb der Website erforderlich. Sie ermöglichen grundlegende Funktionen wie Sicherheit, Netzwerkmanagement und Zugänglichkeit.
-              </p>
+          <div className="space-y-6">
+            <div className="flex items-center justify-between">
+              <div className="space-y-0.5">
+                <Label>Notwendige Cookies</Label>
+                <p className="text-sm text-gray-600">
+                  Diese Cookies sind für den Betrieb der Website erforderlich. Sie ermöglichen grundlegende Funktionen wie Sicherheit, Netzwerkmanagement und Zugänglichkeit.
+                </p>
+              </div>
+              <Switch
+                checked={necessaryCookies}
+                disabled
+              />
             </div>
-            <div>
-              <h3 className="font-semibold mb-2">Analyse-Cookies (Google Analytics)</h3>
-              <p className="text-sm text-gray-600">
-                Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren. Sie sammeln Informationen über die Anzahl der Besucher, die besuchten Seiten und die Zeit, die auf der Website verbracht wird.
-              </p>
-              <p className="text-sm text-gray-600 mt-2">
-                Wir verwenden Google Analytics, um diese Daten zu sammeln. Die Daten werden in den USA gespeichert, wobei wir die IP-Anonymisierung aktiviert haben. Sie können die Erfassung durch Google Analytics verhindern, indem Sie das{" "}
-                <a 
-                  href="https://tools.google.com/dlpage/gaoptout?hl=de" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-[#ff4d00] hover:underline"
-                >
-                  Google Analytics Opt-out Browser Add-on
-                </a>
-                {" "}installieren.
-              </p>
+            <div className="flex items-center justify-between">
+              <div className="space-y-0.5">
+                <Label>Analyse-Cookies (Google Analytics)</Label>
+                <p className="text-sm text-gray-600">
+                  Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren. Sie sammeln Informationen über die Anzahl der Besucher, die besuchten Seiten und die Zeit, die auf der Website verbracht wird.
+                </p>
+                <p className="text-sm text-gray-600 mt-2">
+                  Wir verwenden Google Analytics, um diese Daten zu sammeln. Die Daten werden in den USA gespeichert, wobei wir die IP-Anonymisierung aktiviert haben. Sie können die Erfassung durch Google Analytics verhindern, indem Sie das{" "}
+                  <a 
+                    href="https://tools.google.com/dlpage/gaoptout?hl=de" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#ff4d00] hover:underline"
+                  >
+                    Google Analytics Opt-out Browser Add-on
+                  </a>
+                  {" "}installieren.
+                </p>
+              </div>
+              <Switch
+                checked={analyticsCookies}
+                onCheckedChange={setAnalyticsCookies}
+              />
             </div>
           </div>
+          <DialogFooter>
+            <Button 
+              onClick={handleSaveSettings}
+              className="rounded-full font-mono text-xs"
+            >
+              Einstellungen speichern
+            </Button>
+          </DialogFooter>
         </DialogContent>
       </Dialog>
     </>
