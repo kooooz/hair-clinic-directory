@@ -12,7 +12,7 @@ import { FaqJsonLd } from "@/components/faq-json-ld"
 import { HowToJsonLd } from "@/components/howto-json-ld"
 import { LanguageProvider } from '@/contexts/language-context'
 import { metadata as baseMetadata } from './metadata'
-import { GoogleAnalytics } from "@/components/google-analytics"
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -52,6 +52,20 @@ export default function RootLayout({
           url={baseUrl} 
           imageUrl={ogImageUrl} 
         />
+
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </Script>
       </head>
       <body className={inter.className}>
         <LanguageProvider>
@@ -63,9 +77,6 @@ export default function RootLayout({
             <WebsiteJsonLd />
             <FaqJsonLd />
             <HowToJsonLd />
-            {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-              <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string} />
-            )}
           </ThemeProvider>
         </LanguageProvider>
       </body>
