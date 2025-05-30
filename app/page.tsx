@@ -7,6 +7,7 @@ import { FaqSection } from "@/components/faq-section"
 import { ContactSection } from "@/components/contact-section"
 import { HomepageJsonLd } from "@/components/homepage-json-ld"
 import { faqItems } from "@/lib/faq-data"
+import { CostComparisonSection } from "@/components/cost-comparison-section"
 
 export default function Home() {
   // In a production environment, this would come from environment variables
@@ -21,6 +22,7 @@ export default function Home() {
         <AboutSection />
         <ClinicsList />
         <MethodologySection />
+        <CostComparisonSection />
         <FaqSection />
         <ContactSection />
       </div>
