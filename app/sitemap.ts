@@ -2,6 +2,7 @@ import { MetadataRoute } from "next"
 import { clinics } from "@/lib/clinic-data"
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  // Base URL - only German version is supported
   const baseUrl = "https://beste-haarkliniken.de"
 
   // Static routes
