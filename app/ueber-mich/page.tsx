@@ -3,7 +3,7 @@ import { HorizontalDividerLeftAligned } from "@/components/horizontal-divider-le
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: "Über mich | Haartransplantation Istanbul – Persönlicher Erfahrungsbericht",
+  title: "Über mich | Haartransplantation Istanbul Erfahrung",
   description:
     "Erfahre mehr über meine persönliche Erfahrung mit einer Haartransplantation in Istanbul und die Motivation hinter beste-haarkliniken.de.",
 }
@@ -43,7 +43,7 @@ export default function UeberMichPage() {
         <div className="relative z-20 container mx-auto px-4 flex flex-col items-center justify-center text-center mb-24">
           <div className="max-w-5xl">
             <h1 className="font-heading text-3xl md:text-5xl leading-tight mb-6 text-black">
-              Meine persönliche Erfahrung mit dem Thema Haartransplantation in der Türkei
+              Meine persönliche Erfahrung mit einer Haartransplantation in der Türkei
             </h1>
             <p className="font-mono text-lg md:text-2xl mb-8 max-w-3xl mx-auto text-black">
               Warum ich diese Seite erstellt habe und was ich auf meiner Reise gelernt habe
@@ -66,7 +66,7 @@ export default function UeberMichPage() {
 
       <div className="container mx-auto px-4 py-16 mt-16">
         <div className="max-w-3xl mx-auto">
-          <h1 className="font-body text-3xl md:text-4xl mb-8">Über mich</h1>
+          <h2 className="font-body text-3xl md:text-4xl mb-8">Über mich</h2>
 
           <HorizontalDividerLeftAligned />
 

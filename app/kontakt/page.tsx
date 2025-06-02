@@ -4,7 +4,7 @@ import { ContactForm } from "@/components/contact-form"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: "Kontakt | Fragen zur Haartransplantation in der Türkei? Schreib mir direkt.",
+  title: "Kontakt: Fragen zu Haartransplantation in der Türkei",
   description:
     "Du hast Fragen oder brauchst Hilfe bei der Wahl deiner Haarklinik in der Türkei? Kontaktiere mich persönlich – ich helfe dir gerne weiter.",
 }
@@ -44,7 +44,7 @@ export default function KontaktPage() {
 
       <div className="container mx-auto px-4 py-16 mt-16">
         <div className="max-w-3xl mx-auto">
-          <h1 className="font-body text-3xl md:text-4xl mb-8">Kontakt</h1>
+          <h1 className="font-body text-3xl md:text-4xl mb-8">Kontaktiere uns bei Fragen zur Haartransplantation in der Türkei</h1>
 
           <HorizontalDividerLeftAligned />
 

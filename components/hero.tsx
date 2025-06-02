@@ -12,14 +12,13 @@ export function Hero() {
       </div>
 
       <div className="relative z-20 container mx-auto px-4 flex flex-col items-center justify-center h-full text-center mb-64">
-        <div className="max-w-5xl">
-          <h1 className="font-heading text-3xl md:text-5xl leading-tight mb-6 text-black uppercase">
-            Die 10 besten Kliniken für eine
-            <br />
-            Haartransplantation in der Türkei - 2025
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl mb-6">
+            <span className="text-[#EB5D49]">DIE 10 BESTEN KLINIKEN FÜR EINE<br />
+            HAARTRANSPLANTATION IN DER TÜRKEI 2025</span>
           </h1>
-          <p className="font-mono text-lg md:text-2xl mb-8 max-w-3xl mx-auto text-black">
-            Vergleiche Methoden, Erfahrungen & Preise – und finde die Klinik, die zu dir passt
+          <p className="font-body text-lg md:text-xl mb-8">
+            Vergleiche die besten Haarkliniken in der Türkei und finde die perfekte Klinik für deine Haartransplantation.
           </p>
         </div>
       </div>
