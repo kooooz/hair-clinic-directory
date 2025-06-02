@@ -21,7 +21,6 @@ export const metadata: Metadata = {
   alternates: {
     languages: {
       'de': '/',
-      'en': '/en',
     },
   },
 }
@@ -34,6 +33,21 @@ export default function RootLayout({
   // Base URL for the website - in production, this would come from environment variables
   const baseUrl = "https://beste-haarkliniken.de"
   const ogImageUrl = `${baseUrl}/og-image.jpg`
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Beste Haarkliniken",
+    "url": baseUrl,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": `${baseUrl}/kliniken-vergleichen?search={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
 
   return (
     <html lang="de" suppressHydrationWarning>
@@ -64,6 +78,17 @@ export default function RootLayout({
           `}
         </Script>
         {/* End Google Tag Manager */}
+
+        {/* Ahrefs Verification */}
+        <Script 
+          src="https://analytics.ahrefs.com/analytics.js" 
+          data-key="Il4ZgvyWhIsL3JJ371FN5w" 
+          strategy="afterInteractive"
+        />
+
+        <Script id="website-schema" type="application/ld+json" strategy="afterInteractive">
+          {JSON.stringify(websiteSchema)}
+        </Script>
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
