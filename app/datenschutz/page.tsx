@@ -4,7 +4,7 @@ import Script from "next/script"
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung | Beste Haarkliniken in Istanbul",
-  description: "Informationen zum Datenschutz und zur Datenverarbeitung auf beste-haarkliniken.de",
+  description: "Alles über den Datenschutz auf beste-haarkliniken.de. Informiere dich über die Verarbeitung deiner Daten, unsere Cookie-Nutzung, Google Analytics und deine Rechte als Nutzer.",
 }
 
 export default function DatenschutzPage() {
@@ -149,7 +149,7 @@ export default function DatenschutzPage() {
                   href="https://tools.google.com/dlpage/gaoptout?hl=de"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#ff4d00] hover:underline"
+                  className="text-[#EB5D49] hover:underline"
                 >
                   https://tools.google.com/dlpage/gaoptout?hl=de
                 </a>
@@ -162,7 +162,7 @@ export default function DatenschutzPage() {
                   href="https://privacy.google.com/businesses/controllerterms/mccs/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#ff4d00] hover:underline"
+                  className="text-[#EB5D49] hover:underline"
                 >
                   https://privacy.google.com/businesses/controllerterms/mccs/
                 </a>
