@@ -17,47 +17,27 @@ export function GoogleAnalytics({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_ID: stri
     // Check for analytics consent
     const analyticsConsent = localStorage.getItem('analyticsConsent')
     setHasConsent(analyticsConsent === 'true')
-
-    // Initialize dataLayer
-    window.dataLayer = window.dataLayer || []
-    function gtag(...args: any[]) {
-      window.dataLayer.push(arguments)
-    }
-    window.gtag = gtag
-
-    // If consent is given, initialize GA
-    if (analyticsConsent === 'true') {
-      gtag('js', new Date())
-      gtag('config', GA_MEASUREMENT_ID, {
-        page_path: window.location.pathname,
-      })
-    }
-  }, [GA_MEASUREMENT_ID])
+  }, [])
 
   if (!hasConsent) {
+    console.log('No analytics consent, not loading GA')
     return null
   }
 
   return (
     <>
       <Script
-        strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-      />
-      <Script
-        id="google-analytics"
         strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
       />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_MEASUREMENT_ID}');
+        `}
+      </Script>
     </>
   )
 } 

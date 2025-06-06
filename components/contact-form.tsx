@@ -133,7 +133,7 @@ export function ContactForm() {
         <div className="pt-2">
           <p className="font-mono text-xs text-gray-500 mb-6">
             Mit dem Absenden erklärst du dich mit der Verarbeitung deiner Daten gemäß unserer{" "}
-            <Link href="/datenschutz" className="text-[#ff4d00] hover:underline">
+            <Link href="/datenschutz" className="text-[#EB5D49] hover:underline">
               Datenschutzerklärung
             </Link>{" "}
             einverstanden.

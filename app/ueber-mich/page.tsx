@@ -4,8 +4,7 @@ import Script from "next/script"
 
 export const metadata: Metadata = {
   title: "Über mich | Haartransplantation Istanbul Erfahrung",
-  description:
-    "Erfahre mehr über meine persönliche Erfahrung mit einer Haartransplantation in Istanbul und die Motivation hinter beste-haarkliniken.de.",
+  description: "Meine Erfahrung mit Haartransplantation in Istanbul & warum ich beste-haarkliniken.de gegründet habe.",
 }
 
 export default function UeberMichPage() {
@@ -66,7 +65,7 @@ export default function UeberMichPage() {
 
       <div className="container mx-auto px-4 py-16 mt-16">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-body text-3xl md:text-4xl mb-8">Über mich</h2>
+          <h2 className="font-body text-3xl md:text-4xl mb-8">Über mich | Haartransplantation Istanbul Erfahrung</h2>
 
           <HorizontalDividerLeftAligned />
 

@@ -10,6 +10,8 @@ import { ClinicDetailJsonLd } from "@/components/clinic-detail-json-ld"
 import { ClinicGallery } from "@/components/clinic-gallery"
 import { ClinicExperiences } from "@/components/clinic-experiences"
 import { SocialMetaTags } from "@/components/social-meta-tags"
+import { ArticleJsonLd } from "@/components/article-json-ld"
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld"
 // Helper function to format rating with dot for display
 const formatRating = (rating: number): string => {
   return rating.toFixed(1)
@@ -31,16 +33,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   // Klinikspezifische Meta-Titel und Beschreibungen
   const metaTitles: Record<string, string> = {
-    "vera-clinic": "Vera Clinic – Haartransplantation mit OxyCure in Istanbul | Erfahrungen & Preise",
-    "cosmedica-clinic": "Cosmedica Clinic – Micro Sapphire DHI Haartransplantation | Dr. Levent Acar",
-    "smile-hair-clinic": "Smile Hair Clinic – True™ Philosophy Haartransplantation | Erfahrungen & Preise",
-    "estepera-clinic": "Estepera Klinik – Haartransplantation ohne Rasur in Istanbul | Erfahrungen",
-    clinicana: "Clinicana – Perkutan-Transplantation Istanbul | Erfahrungen & Preise",
-    "dr-cinik-hair-hospital": "Dr. Cinik Hospital – Partner von West Ham United | Haartransplantation Istanbul",
-    "hermest-clinic": "Hermest Clinic – UNIQUE FUE® Methode | Haartransplantation Istanbul",
-    "sule-clinic": "Sule Clinic – Haartransplantation für Prominente | Erfahrungen & Preise",
-    "dr-serkan-aygin-clinic": "Dr. Serkan Aygin Clinic – Haartransplantation ohne Rasur | Erfahrungen",
-    elithair: "Elithair – Größte Haarklinik der Welt | NEO FUE® & SDHI Techniken",
+    "vera-clinic": "Vera Clinic Istanbul: Haartransplantation & OxyCure",
+    "cosmedica-clinic": "Cosmedica Clinic: Micro Sapphire DHI & Dr. Levent Acar",
+    "smile-hair-clinic": "Smile Hair Clinic Türkei: Erfahrungen & Preise",
+    "estepera-clinic": "Esteprea Klinik Istanbul: Haartransplantation ohne Rasur",
+    clinicana: "Clinicana Istanbul: Perkutan-Transplantation & Erfahrungen",
+    "dr-cinik-hair-hospital": "Dr. Cinik Hospital Istanbul: Haartransplantation & Erfahrungen",
+    "hermest-clinic": "Hermest Clinic: UNIQUE FUE® Methode Istanbul",
+    "sule-clinic": "Sule Clinic Türkei: Haartransplantation & Erfahrungen",
+    "dr-serkan-aygin-clinic": "Dr. Serkan Aygin Clinic: Haartransplantation ohne Rasur",
+    elithair: "Elithair Istanbul: NEO FUE® & SDHI Techniken",
   }
 
   const metaDescriptions: Record<string, string> = {
@@ -280,8 +282,25 @@ export default function ClinicPage({ params }: Props) {
     "/placeholder.svg",
   ]
 
+  const breadcrumbItems = [
+    { name: "Home", url: baseUrl },
+    { name: "Kliniken vergleichen", url: `${baseUrl}/kliniken-vergleichen` },
+    { name: clinic.name, url: pageUrl }
+  ]
+
   return (
     <>
+      <ArticleJsonLd
+        title={`${clinic.name} - Haartransplantation in der Türkei | Beste Haarkliniken`}
+        description={clinic.description}
+        url={pageUrl}
+        imageUrl={clinic.imageUrl}
+        datePublished="2024-01-01T00:00:00+00:00"
+        dateModified={new Date().toISOString()}
+        authorName="Max"
+        baseUrl={baseUrl}
+      />
+      <BreadcrumbJsonLd items={breadcrumbItems} baseUrl={baseUrl} />
       <ClinicJsonLd clinic={clinic} />
       <ClinicDetailJsonLd
         clinic={clinic}

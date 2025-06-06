@@ -25,7 +25,7 @@ export function AboutSection() {
               Klinikqualität und Betreuung.
             </p>
             <div className="pt-4">
-              <Link href="/ueber-mich" className="text-[#ff4d00] hover:underline font-mono text-sm">
+              <Link href="/ueber-mich" className="text-[#EB5D49] hover:underline font-mono text-sm">
                 Mehr über mich erfahren →
               </Link>
             </div>

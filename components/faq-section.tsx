@@ -5,6 +5,8 @@ import { HorizontalDivider } from "./horizontal-divider"
 import Link from "next/link"
 
 export function FaqSection() {
+  const baseUrl = "https://beste-haarkliniken.de"
+
   return (
     <section className="py-16" id="faq">
       <div className="container mx-auto px-4">
@@ -28,7 +30,7 @@ export function FaqSection() {
             </Accordion>
 
             <div className="text-center mt-8">
-              <Link href="/faq" className="text-[#ff4d00] hover:underline font-mono text-sm">
+              <Link href="/faq" className="text-[#EB5D49] hover:underline font-mono text-sm">
                 Alle Fragen und Antworten anzeigen →
               </Link>
             </div>

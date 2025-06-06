@@ -44,7 +44,7 @@ export default function KontaktPage() {
 
       <div className="container mx-auto px-4 py-16 mt-16">
         <div className="max-w-3xl mx-auto">
-          <h1 className="font-body text-3xl md:text-4xl mb-8">Kontaktiere uns bei Fragen zur Haartransplantation in der Türkei</h1>
+          <h1 className="font-body text-3xl md:text-4xl mb-8">Kontakt | Fragen zur Haartransplantation in der Türkei</h1>
 
           <HorizontalDividerLeftAligned />
 

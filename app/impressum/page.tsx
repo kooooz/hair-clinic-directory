@@ -4,7 +4,7 @@ import Script from "next/script"
 
 export const metadata: Metadata = {
   title: "Impressum | Beste Haarkliniken in Istanbul",
-  description: "Impressum von beste-haarkliniken.de: Finde hier alle rechtlichen Informationen und Kontaktdaten des Website-Betreibers, einschließlich Angaben gemäß § 5 TMG.",
+  description: "Impressum von beste-haarkliniken.de: Rechtliche Hinweise, Kontaktdaten und Angaben zum Betreiber gemäß § 5 TMG auf einen Blick.",
 }
 
 export default function ImpressumPage() {
@@ -56,7 +56,7 @@ export default function ImpressumPage() {
 
       <div className="container mx-auto px-4 py-16 mt-16">
         <div className="max-w-3xl mx-auto">
-          <h1 className="font-body text-3xl md:text-4xl mb-8">Impressum</h1>
+          <h1 className="font-body text-3xl md:text-4xl mb-8">Impressum und rechtliche Hinweise für beste-haarkliniken.de</h1>
 
           <HorizontalDividerLeftAligned />
 

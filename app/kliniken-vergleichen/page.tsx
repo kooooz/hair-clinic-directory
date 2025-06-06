@@ -5,7 +5,7 @@ import Script from "next/script"
 import { clinicsComparisonData } from "@/lib/clinic-comparison-data"
 
 export const metadata: Metadata = {
-  title: "Alle empfohlenen Haarkliniken in der Türkei im Überblick | FUE & DHI Vergleich",
+  title: "Beste Haarkliniken Türkei im Vergleich | FUE & DHI",
   description:
     "Hier findest du die vollständige Liste aller geprüften Haarkliniken für Haartransplantationen in der Türkei – inklusive Methoden, Preisen und Bewertungen.",
 }

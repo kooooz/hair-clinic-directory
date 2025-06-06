@@ -3,8 +3,8 @@ import { HorizontalDividerLeftAligned } from "@/components/horizontal-divider-le
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: "Datenschutzerklärung | Beste Haarkliniken in Istanbul",
-  description: "Alles über den Datenschutz auf beste-haarkliniken.de. Informiere dich über die Verarbeitung deiner Daten, unsere Cookie-Nutzung, Google Analytics und deine Rechte als Nutzer.",
+  title: "Datenschutz | Beste Haarkliniken",
+  description: "Erfahre, wie beste-haarkliniken.de deine Daten schützt, Cookies nutzt und welche Rechte du als Nutzer hast. Transparenz beim Datenschutz.",
 }
 
 export default function DatenschutzPage() {

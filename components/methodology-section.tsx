@@ -44,7 +44,7 @@ export function MethodologySection() {
               </ul>
 
               <div className="mt-8">
-                <Link href="/empfehlungen" className="text-[#ff4d00] hover:underline font-mono text-sm">
+                <Link href="/empfehlungen" className="text-[#EB5D49] hover:underline font-mono text-sm">
                   Meine Produktempfehlungen für die Heilungsphase →
                 </Link>
               </div>

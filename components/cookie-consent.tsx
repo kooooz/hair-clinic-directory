@@ -70,11 +70,11 @@ export function CookieConsent() {
             <div className="flex-1">
               <p className="font-mono text-sm text-gray-600">
                 Wir verwenden Cookies und Google Analytics, um Ihnen das beste Nutzererlebnis zu ermöglichen und unsere Website zu verbessern. Sie können zwischen der Akzeptanz aller Cookies oder nur der notwendigen Cookies wählen. Ihre Einstellungen können Sie jederzeit über die{" "}
-                <Link href="/cookie-einstellungen" className="text-[#ff4d00] hover:underline">
+                <Link href="/cookie-einstellungen" className="text-[#EB5D49] hover:underline">
                   Cookie-Einstellungen
                 </Link>
                 {" "}anpassen. Weitere Informationen zu Cookies und Google Analytics erhalten Sie in unserer{" "}
-                <a href="/datenschutz" className="text-[#ff4d00] hover:underline">
+                <a href="/datenschutz" className="text-[#EB5D49] hover:underline">
                   Datenschutzerklärung
                 </a>
                 .
@@ -136,7 +136,7 @@ export function CookieConsent() {
                     href="https://tools.google.com/dlpage/gaoptout?hl=de" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-[#ff4d00] hover:underline"
+                    className="text-[#EB5D49] hover:underline"
                   >
                     Google Analytics Opt-out Browser Add-on
                   </a>

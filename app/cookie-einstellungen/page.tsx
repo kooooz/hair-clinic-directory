@@ -93,7 +93,7 @@ export default function CookieSettings() {
           </p>
           <p>
             Weitere Informationen zu Cookies und wie wir sie verwenden, finden Sie in unserer{" "}
-            <a href="/datenschutz" className="text-[#ff4d00] hover:underline">
+            <a href="/datenschutz" className="text-[#EB5D49] hover:underline">
               Datenschutzerklärung
             </a>
             .

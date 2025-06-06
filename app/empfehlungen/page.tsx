@@ -6,8 +6,7 @@ import Script from "next/script"
 
 export const metadata: Metadata = {
   title: "Empfohlene Produkte für die Heilungsphase nach der Haartransplantation",
-  description:
-    "Produkte nach Haartransplantation: Vitamine, Shampoos & Pflege für optimale Heilung.",
+  description: "Entdecke empfohlene Vitamine, Shampoos und Pflegeprodukte für eine optimale Heilung und gesundes Haarwachstum nach deiner Haartransplantation.",
 }
 
 export default function EmpfehlungenPage() {

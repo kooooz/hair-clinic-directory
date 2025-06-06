@@ -89,6 +89,13 @@ export default function RootLayout({
         <Script id="website-schema" type="application/ld+json" strategy="afterInteractive">
           {JSON.stringify(websiteSchema)}
         </Script>
+
+        {/* Hreflang self-referencing and x-default */}
+        <link rel="alternate" href="https://beste-haarkliniken.de" hrefLang="de" />
+        <link rel="alternate" href="https://beste-haarkliniken.de" hrefLang="x-default" />
+
+        {/* Canonical URL for homepage */}
+        <link rel="canonical" href="https://www.beste-haarkliniken.de/" />
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
