@@ -11,7 +11,7 @@ import { ClinicGallery } from "@/components/clinic-gallery"
 import { ClinicExperiences } from "@/components/clinic-experiences"
 import { SocialMetaTags } from "@/components/social-meta-tags"
 import { ArticleJsonLd } from "@/components/article-json-ld"
-import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld"
+import { Breadcrumb } from "@/components/breadcrumb"
 // Helper function to format rating with dot for display
 const formatRating = (rating: number): string => {
   return rating.toFixed(1)
@@ -300,7 +300,10 @@ export default function ClinicPage({ params }: Props) {
         authorName="Max"
         baseUrl={baseUrl}
       />
-      <BreadcrumbJsonLd items={breadcrumbItems} baseUrl={baseUrl} />
+      <Breadcrumb items={[
+        { label: "Kliniken vergleichen", href: "/kliniken-vergleichen" },
+        { label: clinic.name, href: `/klinik/${clinic.id}` }
+      ]} />
       <ClinicJsonLd clinic={clinic} />
       <ClinicDetailJsonLd
         clinic={clinic}
