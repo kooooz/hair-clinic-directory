@@ -115,7 +115,6 @@ export default function RootLayout({
             <Footer />
             <CookieConsent />
             <WebsiteJsonLd />
-            <FaqJsonLd />
             <HowToJsonLd />
           </ThemeProvider>
         </LanguageProvider>
