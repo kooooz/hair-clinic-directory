@@ -75,5 +75,57 @@ export const faqItems: FaqItem[] = [
   {
     question: "Was ist die Norwood-Skala?",
     answer: "Die Norwood-Skala ist ein gängiges Klassifikationssystem, das den Fortschritt des erblich bedingten Haarausfalls bei Männern einstuft – von leichten Geheimratsecken bis zur vollständigen Glatze. Sie hilft dabei, den Haarausfall besser einzuordnen und die Eignung für eine Haartransplantation einzuschätzen. Viele Kliniken nutzen diese Skala als Grundlage für eine individuelle Beratung."
+  },
+  {
+    question: "Gibt es ein Höchstalter für eine Haartransplantation?",
+    answer: "Es gibt kein striktes Höchstalter für eine Haartransplantation, solange der Patient bei guter Gesundheit ist und über ausreichend Spenderhaar verfügt. Wichtiger ist, dass der Haarausfall stabilisiert ist, um zukünftige Operationen zu vermeiden. Eine individuelle Beratung in der Klinik klärt die Eignung ab."
+  },
+  {
+    question: "Welche Risiken und Nebenwirkungen hat eine Haartransplantation?",
+    answer: "Die Risiken sind gering, da es sich um einen minimal-invasiven Eingriff handelt. Häufige Nebenwirkungen sind leichte Schwellungen, Rötungen und Krustenbildung, die innerhalb weniger Tage abklingen. Selten können Infektionen, Taubheitsgefühle oder ein unnatürliches Ergebnis auftreten. Eine sorgfältige Klinikwahl minimiert diese Risiken."
+  },
+  {
+    question: "Wie pflege ich meine Haare nach einer Haartransplantation richtig?",
+    answer: "Nach der Haartransplantation ist eine spezielle Pflege entscheidend. Dazu gehören das sanfte Waschen der Haare mit einem milden Shampoo, das Vermeiden von direktem Sonnenlicht und das Tragen einer lockeren Kopfbedeckung. Die Klinik gibt detaillierte Anweisungen und spezielle Pflegeprodukte für die ersten Wochen mit."
+  },
+  {
+    question: "Ist eine Haartransplantation dauerhaft?",
+    answer: "Ja, die transplantierten Haarfollikel werden typischerweise aus dem Spenderbereich (meist Nacken und Seiten des Kopfes) entnommen, die genetisch gegen Haarausfall resistent sind. Diese Haare wachsen natürlich weiter und gelten als dauerhaft."
+  },
+  {
+    question: "Wie lange dauert eine Haartransplantation?",
+    answer: "Eine Haartransplantation dauert in der Regel zwischen 6 bis 9 Stunden, abhängig von der Anzahl der zu verpflanzenden Grafts und der gewählten Methode (z.B. FUE oder DHI). Es ist normalerweise eine einzelne, lange Sitzung."
+  },
+  {
+    question: "Was ist die FUE-Methode?",
+    answer: "FUE (Follicular Unit Extraction) ist eine gängige Haartransplantationsmethode, bei der einzelne Haarfollikel mit einem Mikrostempel direkt aus dem Spenderbereich entnommen werden. Diese Follikel werden dann in den Empfängerbereich implantiert. Sie ist bekannt für minimale Narbenbildung und schnellere Heilung."
+  },
+  {
+    question: "Was ist die DHI-Methode?",
+    answer: "DHI (Direct Hair Implantation) ist eine Variante der FUE-Methode. Bei DHI werden die entnommenen Haarfollikel direkt mit einem speziellen Implantationsstift in den Empfängerbereich eingesetzt, ohne vorherige Kanalbildung. Dies ermöglicht eine höhere Dichte sowie eine präzisere Winkel- und Richtungsbestimmung des Haarwuchses."
+  },
+  {
+    question: "Wann kann ich nach einer Haartransplantation wieder arbeiten?",
+    answer: "Die meisten Patienten können innerhalb von 2-5 Tagen nach einer Haartransplantation wieder arbeiten. Einige bevorzugen jedoch 7-10 Tage frei zu nehmen, damit anfängliche Rötungen und Schwellungen abklingen und die kleinen Krusten abfallen können, besonders wenn der Job öffentliche Interaktion erfordert."
+  },
+  {
+    question: "Sind die Ergebnisse einer Haartransplantation natürlich?",
+    answer: "Mit erfahrenen Chirurgen und fortschrittlichen Techniken (wie FUE oder DHI) können Haartransplantationsergebnisse sehr natürlich aussehen. Entscheidende Faktoren für ein natürliches Aussehen sind eine korrekte Haarlinienplanung, der richtige Winkel und die Richtung der implantierten Grafts sowie eine angemessene Dichte."
+  },
+  {
+    question: "Was ist \"Shock Loss\" nach einer Haartransplantation?",
+    answer: "\"Shock Loss\" bezeichnet das vorübergehende Ausfallen vorhandener Haare (sowohl transplantierter als auch ursprünglicher Haare), das einige Wochen nach einer Haartransplantation auftreten kann. Es ist ein normaler Teil des Heilungsprozesses und in der Regel vorübergehend; neues Haarwachstum setzt innerhalb weniger Monate wieder ein."
+  },
+  {
+    question: "Wie wähle ich die beste Haartransplantationsklinik aus?",
+    answer: "Um die beste Klinik zu wählen, sollten Faktoren wie die Erfahrung und Qualifikation des Chirurgen, Klinikakkreditierungen, Patientenbewertungen und Erfahrungsberichte, Vorher-Nachher-Bilder, transparente Preise und eine umfassende Nachsorge berücksichtigt werden. Eine ausführliche Beratung ist ebenfalls entscheidend."
+  },
+  {
+    question: "Kann ich nach einer Haartransplantation eine Mütze tragen?",
+    answer: "Sie sollten in den ersten 10-14 Tagen nach einer Haartransplantation das Tragen enger Mützen oder Kopfbedeckungen vermeiden, um die neu implantierten Grafts zu schützen. Danach kann eine locker sitzende Kopfbedeckung im Allgemeinen getragen werden. Ihre Klinik wird Ihnen spezifische Anweisungen geben."
+  },
+  {
+    question: "Was ist PRP-Therapie und wird sie nach einer Haartransplantation empfohlen?",
+    answer: "Die PRP (Platelet-Rich Plasma)-Therapie beinhaltet die Injektion einer konzentrierten Lösung Ihrer eigenen Blutplättchen in die Kopfhaut. Sie wird oft nach einer Haartransplantation empfohlen, um die Heilung zu beschleunigen, das Haarwachstum anzuregen und vorhandene Follikel zu stärken. Viele Kliniken bieten sie als Teil ihres postoperativen Pflegepakets an."
   }
 ]
