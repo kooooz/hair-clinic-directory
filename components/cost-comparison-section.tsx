@@ -43,14 +43,14 @@ export function CostComparisonSection() {
             height={1080}
             className="w-full h-auto"
           />
-          <div className="absolute inset-0 flex items-start justify-between px-4 md:px-8 pt-8 md:pt-16">
+          <div className="absolute inset-0 flex items-start justify-between px-4 md:px-8 pt-4 md:pt-16">
             <div className="w-1/2 flex justify-center">
-              <p className="text-[12px] md:text-[14px] font-geist text-center bg-white/80 backdrop-blur-sm px-2 py-1 rounded">
+              <p className="text-[11px] md:text-[14px] font-geist text-center rounded">
                 Durchschnittliche Kosten pro Graft
               </p>
             </div>
             <div className="w-1/2 flex justify-center">
-              <p className="text-[12px] md:text-[14px] font-geist text-center bg-white/80 backdrop-blur-sm px-2 py-1 rounded">
+              <p className="text-[11px] md:text-[14px] font-geist text-center rounded">
                 Durchschnittliche Gesamtkosten für eine Transplantation von<br className="hidden md:block" />
                 3.000 Grafts
               </p>

@@ -5,103 +5,75 @@ export type FaqItem = {
 
 export const faqItems: FaqItem[] = [
   {
-    question: "Bin ich für eine Haartransplantation geeignet?",
-    answer:
-      "Wenn Du unter anhaltendem Haarausfall leidest, Deine Haarlinie zurückgegangen ist oder kahle Stellen sichtbar werden, und gleichzeitig im Hinterkopf oder an den Seiten noch genug Spenderhaar vorhanden ist – dann bist Du grundsätzlich geeignet. Wichtig ist, dass Dein Haarausfall nicht mehr in einer sehr aktiven Phase ist. Eine individuelle Einschätzung durch eine Fachperson ist dabei unerlässlich.",
-  },
-  {
-    question: "Welche Methoden der Haartransplantation gibt es und was sind ihre Vor- und Nachteile?",
-    answer:
-      "Es gibt vier gängige Methoden:\n\nFUE (Follicular Unit Extraction): Einzelne Haarfollikel werden entnommen und in die gewünschten Zonen eingesetzt. Vorteile: keine sichtbaren Narben, schnellere Heilung. Nachteile: etwas längere OP-Dauer.\nSaphir-FUE: Weiterentwicklung der FUE mit besonders feinen Saphirklingen. Vorteile: präzisere Einschnitte, weniger Narben, bessere Heilung.\nDHI (Direct Hair Implantation): Grafts werden direkt in die Kopfhaut eingesetzt, ohne vorherige Kanäle. Vorteile: höhere Haardichte, ideal für kleinere Areale oder Verdichtung. Nachteile: teurer, zeitaufwendiger.\nFUT (Strip-Methode): Ein Hautstreifen wird entnommen. Vorteile: viele Grafts auf einmal. Nachteile: größere Narbe, längere Heilung.\nIch selbst habe mich für Sapphire FUE entschieden – ein guter Kompromiss aus Technik, Heilung und Ergebnis.",
-  },
-  {
-    question: "Welche Risiken sind mit einer Haartransplantation verbunden?",
-    answer:
-      'Wie bei jedem medizinischen Eingriff gibt es Risiken. Möglich sind Infektionen, Schwellungen, vorübergehende Gefühlsstörungen an der Kopfhaut oder unregelmäßiges Wachstum. Auch sogenannte "shock loss"-Phasen, bei denen bestehende Haare in der Umgebung vorübergehend ausfallen, sind möglich – aber reversibel. Bei mir traten leichte Schwellungen und Spannungsgefühle auf, die aber nach wenigen Tagen verschwanden.',
-  },
-  {
-    question: "Wie läuft der Eingriff ab?",
-    answer:
-      "Der Eingriff läuft in mehreren Phasen ab:\n\nBeratung und Planung, inklusive Haarliniendesign.\nRasur und lokale Betäubung – und ja, das ist aus meiner Sicht der unangenehmste Teil. Das Einspritzen in die Kopfhaut ist kurz, aber intensiv.\nEntnahme der Grafts aus dem Spenderbereich.\nAufbereitung und Zählung der Grafts.\nEinsetzen der Grafts in die vorher festgelegten Areale.\nNachkontrolle und Pflegeanleitung.\nInsgesamt war ich etwa 6 Stunden im Behandlungsraum.",
-  },
-  {
-    question: "Ist die Haartransplantation schmerzhaft?",
-    answer:
-      "Während des Eingriffs selbst spürt man durch die lokale Betäubung so gut wie nichts. Die Betäubungsspritzen sind der schmerzhafteste Teil – ein paar Minuten unangenehm, dann ist alles taub. Danach bleibt es entspannt. Nach der OP spürte ich vor allem Spannungsgefühle im Spenderbereich, aber keine starken Schmerzen.",
-  },
-  {
-    question: "Was ist ein Graft?",
-    answer:
-      "Ein Graft ist eine Einheit aus 1 bis 4 Haarwurzeln. Diese kleinen Bündel werden entnommen und wieder eingesetzt. Die Anzahl der benötigten Grafts entscheidet maßgeblich über den Preis und das Endergebnis.",
-  },
-  {
-    question: "Wie viele Grafts benötige ich?",
-    answer:
-      "Das hängt vom Haarausfall und Deinen Zielen ab. Grobe Richtwerte:\n\nGeheimratsecken: 1.000–1.500 Grafts\nStirn & Haarlinie: 2.000–2.500 Grafts\nOberkopf: 2.500–4.000 Grafts\nKomplette obere Kopfregion: 4.000–6.000+ Grafts\nIch hatte rund 4.500 Grafts – und das war für meinen fortgeschrittenen Haarausfall genau richtig.",
-  },
-  {
-    question: "Gibt es eine ideale Jahreszeit für eine Haartransplantation?",
-    answer:
-      'Theoretisch kannst Du den Eingriff zu jeder Zeit im Jahr machen. Im Sommer solltest Du in den ersten Wochen direkte Sonneneinstrahlung vermeiden. Ich bekam z. B. einen schicken Fischerhut mit – damit war ich auch am Flughafen nicht alleine unter "Frisch-Transplantierten".',
-  },
-  {
     question: "Was kostet eine Haartransplantation in der Türkei?",
-    answer:
-      "Du kannst mit Preisen zwischen 1.500 und 3.500 € rechnen – je nach Klinik, Methode und Anzahl der Grafts. Die meisten Anbieter bieten All-Inclusive-Pakete mit Hotel, Transfers und Nachsorge an. Im Vergleich zu Deutschland sind die Kosten deutlich niedriger – und das bei sehr guter Qualität.",
+    answer: "Eine Haartransplantation in der Türkei kostet zwischen 1.500€ und 3.500€. Dies ist deutlich günstiger als in Deutschland, wo die Preise bei 4.000€ bis 8.000€ liegen. Die Kosten variieren je nach Klinik, Methode und Anzahl der benötigten Grafts."
   },
   {
-    question: "Wie finde ich eine seriöse Klinik in der Türkei?",
-    answer:
-      "Genau deshalb habe ich diese Seite erstellt.\nAchte auf:\n\nNachvollziehbare Vorher-Nachher-Bilder\nGute Erreichbarkeit und ehrliche Kommunikation\nErfahrungsberichte aus Foren (nicht nur Google)\nKeine unrealistischen Versprechen\nKeine versteckten Zusatzkosten\nDer intensive mit der Klinik im Vorfeld kann ebenfalls viel Klarheit bringen.",
+    question: "Wie lange dauert die Heilung nach einer Haartransplantation?",
+    answer: "Die Heilung nach einer Haartransplantation verläuft in mehreren Phasen: Die initiale Heilung dauert 7-10 Tage, die Krusten fallen nach 10-14 Tagen ab. Nach 2-3 Wochen fallen die transplantierten Haare aus. Das neue Haarwachstum beginnt nach 3-4 Monaten, und das finale Ergebnis ist nach 12-18 Monaten sichtbar."
   },
   {
-    question: "Warum sind die Kosten für eine Haartransplantation in der Türkei vergleichsweise günstig?",
-    answer:
-      "Die geringeren Lebenshaltungs- und Lohnkosten in der Türkei, kombiniert mit einem hohen Wettbewerb unter den Kliniken, führen zu deutlich günstigeren Preisen – bei oft sehr hohem medizinischem Standard.",
+    question: "Welche Methoden der Haartransplantation gibt es?",
+    answer: "Die vier gängigsten Methoden sind: 1) FUE (Follicular Unit Extraction): Einzelne Haarfollikel werden entnommen. 2) Saphir-FUE: Weiterentwicklung mit feineren Saphirklingen. 3) DHI (Direct Hair Implantation): Direktes Einsetzen ohne vorherige Kanäle. 4) FUT (Strip-Methode): Entnahme eines Hautstreifens. FUE und DHI sind heute die am häufigsten verwendeten Methoden."
   },
   {
-    question: "Ist ein Arzt in den Eingriff involviert?",
-    answer:
-      "Ja – aber in unterschiedlicher Intensität. Der Arzt plant die Haarlinie, gibt die Richtung und Strategie vor und überwacht den Eingriff. Das Einsetzen der Grafts übernehmen oft sehr erfahrene Techniker:innen. Das ist Standard, auch in renommierten Kliniken.",
+    question: "Ist eine Haartransplantation schmerzhaft?",
+    answer: "Während der Haartransplantation selbst verspüren Sie durch die lokale Betäubung keine Schmerzen. Die Betäubungsspritzen sind der einzige unangenehme Moment. Nach der OP können leichte Spannungsgefühle im Spenderbereich auftreten, die aber gut behandelbar sind und nach wenigen Tagen verschwinden."
   },
   {
-    question: "Wie lange im Voraus sollte ich einen Termin buchen?",
-    answer:
-      "Ich konnte innerhalb weniger Tage einen Termin bekommen. Trotzdem empfehle ich, mindestens 2–4 Wochen vorher zu planen, um genug Zeit für Flugbuchung, Unterkunft und die OP-Vorbereitung zu haben.",
-  },
-  {
-    question: "Wie verläuft die Heilung nach der Transplantation?",
-    answer:
-      'Erste 10 Tage:\nTägliches Einweichen der Kopfhaut mit einer Lotion für sensible Haut, sanftes Ausspülen mit speziellem Shampoo. Schlafen in fast aufrechter Sitzhaltung mit Nackenkissen – hilft gegen Schwellungen.\nNach 10 Tagen:\nKrusten beginnen abzufallen, meist ohne zu kratzen. Das erste "richtige" Haarewaschen ist ein kleiner Meilenstein.\nNach 2 Wochen:\nLeichte körperliche Aktivität ist wieder möglich.\nNach 4 Wochen:\nSchwimmen und intensiver Sport sind erlaubt. Haare im Transplantationsbereich können in dieser Zeit ausfallen (sog. "Shock Loss") – das ist normal und sie wachsen nach.\nNach 3–4 Monaten:\nErste sichtbare Ergebnisse.\nNach 12–18 Monaten:\nVolles Ergebnis mit natürlichem Haarbild.',
-  },
-  {
-    question: "Wie gestaltet sich die Rückreise nach der Transplantation?",
-    answer:
-      "Am Tag nach der OP bin ich mit Fischerhut und sanft pochender Kopfhaut zum Flughafen. Klar, man sieht's – aber Du wirst viele Gleichgesinnte treffen. Die Kliniken bereiten Dich darauf vor und geben Tipps für den Rückflug (z. B. Hut, Nackenkissen, kein schweres Handgepäck). Rückflug ist also kein Problem – ein bisschen Mut gehört dazu, aber es lohnt sich.",
-  },
-  {
-    question: "Welche Pflege ist nach der Haartransplantation notwendig?",
-    answer:
-      "Die richtige Pflege entscheidet mit über das Ergebnis. Du solltest:\n\nIn den ersten 10 Tagen täglich Lotion und ein mildes Spezialshampoo verwenden (sanft, nicht reiben).\nDie Kopfhaut nur tupfen, nicht abtrocknen oder rubbeln.\nKeine Kopfbedeckung tragen außer dem mitgegebenen Spezialhut.\nSonne, Schweiß und starke Hitze (z. B. Sauna) meiden.\nNach 14 Tagen kannst Du auf ein neutrales Babyshampoo umsteigen.\nZusätzlich empfehle ich die regelmäßige Einnahme von Biotin oder Zink und – falls individuell sinnvoll – auch Finasterid in topischer Form.",
-  },
-  {
-    question: "Wann sehe ich erste Ergebnisse nach der Haartransplantation?",
-    answer:
-      "Die meisten sehen ab dem 3. bis 4. Monat die ersten kleinen, dünnen Haare sprießen. So war's auch bei mir. Ab dem 6. Monat wird das Ergebnis dichter und gleichmäßiger. Das finale Resultat sieht man aber wirklich erst nach etwa 12 bis 18 Monaten – Geduld ist hier das A und O.",
+    question: "Wie viele Grafts benötige ich für eine Haartransplantation?",
+    answer: "Die benötigte Anzahl an Grafts hängt vom Ausmaß des Haarausfalls ab: Geheimratsecken benötigen 1.000-1.500 Grafts, Stirn und Haarlinie 2.000-2.500 Grafts, der Oberkopf 2.500-4.000 Grafts. Bei komplettem Haarausfall im oberen Bereich werden 4.000-6.000+ Grafts benötigt."
   },
   {
     question: "Wie lange halten die transplantierten Haare?",
-    answer:
-      "Die transplantierten Haare stammen aus dem Spenderbereich, der genetisch nicht vom Haarausfall betroffen ist. Daher sind diese Haare in der Regel dauerhaft. Wichtig ist aber: Die restlichen Haare (z. B. am Oberkopf) können weiterhin ausfallen – darum ist eine erhaltende Behandlung (z. B. mit Minoxidil oder Finasterid) oft sinnvoll.",
+    answer: "Die transplantierten Haare sind dauerhaft, da sie aus dem genetisch stabilen Spenderbereich stammen. Diese Haare fallen nicht mehr aus. Allerdings können die nicht-transplantierten Haare weiterhin ausfallen, weshalb oft eine erhaltende Behandlung mit Minoxidil oder Finasterid empfohlen wird."
   },
   {
-    question: "Gibt es Alternativen zur Haartransplantation?",
-    answer:
-      "Ja, vor allem dann, wenn eine Transplantation (noch) nicht in Frage kommt. Dazu gehören:\n\nMedikamente: Finasterid (oral oder topisch), Minoxidil (Schaum oder Lösung)\nPRP (Plättchenreiches Plasma): Eigenbluttherapie zur Stimulierung der Haarwurzeln\nMikropigmentierung: Optische Verdichtung durch Pigmentfarbe\nHaarfasern: Kurzfristige kosmetische Lösung\nIch habe selbst mit Minoxidil und PRP experimentiert – hilfreich, aber keine dauerhafte Lösung bei fortgeschrittenem Haarausfall.",
+    question: "Wie finde ich eine seriöse Haarklinik in der Türkei?",
+    answer: "Eine seriöse Haarklinik erkennen Sie an: Nachvollziehbaren Vorher-Nachher-Bildern, guter Erreichbarkeit, ehrlicher Kommunikation, echten Erfahrungsberichten, realistischen Versprechen und transparenten Preisen ohne versteckte Zusatzkosten. Die Klinik sollte zertifiziert sein und über erfahrene Ärzte verfügen."
   },
   {
-    question: "Ist eine zweite Haartransplantation möglich?",
-    answer:
-      "Ja, absolut – viele Patient:innen entscheiden sich für eine zweite Sitzung, z. B. zur Verdichtung oder zur Korrektur von kahlen Stellen, die später stärker geworden sind. Ich kenne einige, die 12–24 Monate nach der ersten OP einen zweiten Eingriff gemacht haben – mit sehr guten Ergebnissen. Wichtig ist, dass im Spenderbereich noch ausreichend Grafts vorhanden sind.",
+    question: "Was ist der Ablauf einer Haartransplantation?",
+    answer: "Der Ablauf einer Haartransplantation gliedert sich in: 1) Beratung und Planung mit Haarliniendesign, 2) Rasur und lokale Betäubung, 3) Entnahme der Grafts, 4) Aufbereitung und Zählung, 5) Einsetzen der Grafts, 6) Nachkontrolle und Pflegeanleitung. Der gesamte Eingriff dauert etwa 6-8 Stunden."
   },
+  {
+    question: "Was hilft wirklich gegen Haarausfall?",
+    answer: "Haarausfall kann viele Ursachen haben – von genetischer Veranlagung über hormonelle Veränderungen bis hin zu Stress oder Ernährungsmängeln. Je nach Ursache kann es helfen, gezielt Vitamine einzunehmen, Stress zu reduzieren oder medizinische Mittel wie Minoxidil oder Finasterid auszuprobieren. Bei dauerhaftem, erblich bedingtem Haarausfall (androgenetischer Alopezie) kann eine Haartransplantation eine dauerhafte Lösung sein. Wir empfehlen, individuelle Ursachen immer mit einem Facharzt abzuklären."
+  },
+  {
+    question: "Was ist Minoxidil und hilft es bei Haarausfall?",
+    answer: "Minoxidil ist ein Wirkstoff, der lokal auf die Kopfhaut aufgetragen wird und das Haarwachstum anregen kann. Es wird häufig bei erblich bedingtem Haarausfall eingesetzt. Die Wirksamkeit kann individuell stark variieren. Sobald Minoxidil abgesetzt wird, kehrt der Haarausfall meist zurück. Eine Haartransplantation kann eine Alternative sein, wenn der Haarverlust bereits fortgeschritten ist."
+  },
+  {
+    question: "Was bewirkt Finasterid bei Haarausfall?",
+    answer: "Finasterid ist ein verschreibungspflichtiges Medikament, das den DHT-Spiegel im Körper senkt – ein Hormon, das mit genetisch bedingtem Haarausfall in Verbindung steht. Es kann den Haarausfall verlangsamen oder stoppen. Es sollte nur nach ärztlicher Beratung eingenommen werden, da Nebenwirkungen möglich sind. Für bereits ausgefallene Haare kann eine Haartransplantation in Betracht gezogen werden."
+  },
+  {
+    question: "Was ist Alopecia Areata und gibt es eine Behandlung?",
+    answer: "Alopecia Areata ist eine Autoimmunerkrankung, bei der das Immunsystem Haarfollikel angreift – oft in Form von runden, kahlen Stellen. Die Ursache ist nicht vollständig erforscht. In manchen Fällen wachsen die Haare spontan wieder nach. Eine Haartransplantation ist bei Alopecia Areata nicht immer sinnvoll – hier sollte unbedingt eine ärztliche Einschätzung erfolgen."
+  },
+  {
+    question: "Wie kann man das Haarwachstum anregen?",
+    answer: "Haarwachstum lässt sich durch eine gesunde Ernährung, eine gute Kopfhautpflege und bestimmte Wirkstoffe wie Minoxidil oder Koffein-Shampoos unterstützen. Auch Kopfhautmassagen und Mikronährstoffe wie Biotin, Zink oder Eisen können hilfreich sein. Bei starkem oder dauerhaftem Haarausfall können jedoch diese Mittel allein nicht ausreichen – hier kann eine Haartransplantation helfen, lichte Stellen dauerhaft zu füllen."
+  },
+  {
+    question: "Gibt es vorher-nachher-Ergebnisse bei einer Haartransplantation?",
+    answer: "Ja, viele Patienten berichten von beeindruckenden vorher-nachher-Ergebnissen nach einer Haartransplantation. Der Erfolg hängt jedoch von vielen Faktoren ab: Technik, Klinik, Erfahrung des Arztes und individuelle Voraussetzungen. In unserem Klinikverzeichnis zeigen wir Beispiele und Erfahrungsberichte, damit du dir ein realistisches Bild machen kannst."
+  },
+  {
+    question: "Was sind die häufigsten Ursachen für Haarausfall?",
+    answer: "Zu den häufigsten Ursachen gehören genetische Veranlagung (androgenetische Alopezie), hormonelle Schwankungen, Stress, Nährstoffmangel, Krankheiten oder Medikamente. Es ist wichtig, die Ursache möglichst frühzeitig zu erkennen. Bei genetischem Haarausfall kann eine Haartransplantation eine dauerhafte Lösung sein – wir zeigen dir die besten Kliniken dafür."
+  },
+  {
+    question: "Welche Vitamine helfen bei Haarausfall?",
+    answer: "Vitamine wie Biotin (Vitamin B7), Vitamin D, Vitamin E sowie Mineralstoffe wie Zink, Eisen und Selen können das Haarwachstum unterstützen. Ein Mangel kann Haarausfall begünstigen. Eine Blutuntersuchung kann Aufschluss geben. Bei fortgeschrittenem Haarausfall reicht eine Vitaminzufuhr allein oft nicht – eine Haartransplantation kann dann eine Option sein."
+  },
+  {
+    question: "Welche Mittel gegen Haarausfall sind empfehlenswert?",
+    answer: "Zu den bekanntesten Mitteln zählen Minoxidil (topisch), Finasterid (oral) und verschiedene koffeinhaltige Pflegeprodukte. Auch Naturheilmittel oder Nahrungsergänzungsmittel werden oft probiert – ihre Wirksamkeit ist jedoch begrenzt belegt. Wer langfristig mit lichtem Haar zu kämpfen hat, kann sich über eine Haartransplantation informieren – auf unserer Seite findest du passende Anbieter in Istanbul."
+  },
+  {
+    question: "Was ist die Norwood-Skala?",
+    answer: "Die Norwood-Skala ist ein gängiges Klassifikationssystem, das den Fortschritt des erblich bedingten Haarausfalls bei Männern einstuft – von leichten Geheimratsecken bis zur vollständigen Glatze. Sie hilft dabei, den Haarausfall besser einzuordnen und die Eignung für eine Haartransplantation einzuschätzen. Viele Kliniken nutzen diese Skala als Grundlage für eine individuelle Beratung."
+  }
 ]
