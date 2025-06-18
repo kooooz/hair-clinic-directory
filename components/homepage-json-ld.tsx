@@ -9,6 +9,7 @@ type HomepageJsonLdProps = {
 
 export function HomepageJsonLd({ faqItems, baseUrl }: HomepageJsonLdProps) {
   // Organization and WebPage schema
+  baseUrl = baseUrl.replace('https://beste-haarkliniken.de', 'https://www.beste-haarkliniken.de');
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",

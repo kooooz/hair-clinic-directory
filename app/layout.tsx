@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   // Base URL for the website - in production, this would come from environment variables
-  const baseUrl = "https://beste-haarkliniken.de"
+  const baseUrl = "https://www.beste-haarkliniken.de"
   const ogImageUrl = `${baseUrl}/og-image.jpg`
 
   const websiteSchema = {
@@ -91,8 +91,8 @@ export default function RootLayout({
         </Script>
 
         {/* Hreflang self-referencing and x-default */}
-        <link rel="alternate" href="https://beste-haarkliniken.de" hrefLang="de" />
-        <link rel="alternate" href="https://beste-haarkliniken.de" hrefLang="x-default" />
+        <link rel="alternate" href="https://www.beste-haarkliniken.de" hrefLang="de" />
+        <link rel="alternate" href="https://www.beste-haarkliniken.de" hrefLang="x-default" />
 
         {/* Canonical URL for homepage */}
         <link rel="canonical" href="https://www.beste-haarkliniken.de/" />

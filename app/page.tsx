@@ -11,7 +11,7 @@ import { CostComparisonSection } from "@/components/cost-comparison-section"
 
 export default function Home() {
   // In a production environment, this would come from environment variables
-  const baseUrl = "https://beste-haarkliniken.de"
+  const baseUrl = "https://www.beste-haarkliniken.de"
 
   return (
     <>

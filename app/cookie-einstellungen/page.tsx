@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Switch } from "@/components/ui/switch"
 import { Label } from "@/components/ui/label"
 import { Alert, AlertDescription } from "@/components/ui/alert"
+import type { Metadata } from "next"
 
 export default function CookieSettings() {
   const [necessaryCookies, setNecessaryCookies] = useState(true)
@@ -102,4 +103,9 @@ export default function CookieSettings() {
       </div>
     </div>
   )
+}
+
+export const metadata: Metadata = {
+  title: "Cookie-Einstellungen | Beste Haarkliniken",
+  description: "Verwalten Sie Ihre Cookie-Einstellungen für beste-haarkliniken.de. Passen Sie an, welche Cookies Sie zulassen möchten.",
 } 

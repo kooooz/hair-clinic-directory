@@ -270,7 +270,7 @@ export default function ClinicPage({ params }: Props) {
   }
 
   // Base URL for the website - in production, this would come from environment variables
-  const baseUrl = "https://beste-haarkliniken.de"
+  const baseUrl = "https://www.beste-haarkliniken.de"
   const pageUrl = `${baseUrl}/klinik/${clinic.id}`
   const ogImageUrl = clinic.imageUrl.startsWith("http") ? clinic.imageUrl : `${baseUrl}${clinic.imageUrl}`
 

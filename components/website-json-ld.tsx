@@ -1,7 +1,7 @@
 import Script from "next/script"
 
 export function WebsiteJsonLd() {
-  const baseUrl = "https://beste-haarkliniken.de"
+  const baseUrl = "https://www.beste-haarkliniken.de"
 
   const jsonLd = {
     "@context": "https://schema.org",
