@@ -67,6 +67,9 @@ export default function RootLayout({
           imageUrl={ogImageUrl} 
         />
 
+        {/* Favicon */}
+        <link rel="icon" type="image/svg+xml" href="/flavicon.svg" />
+
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
