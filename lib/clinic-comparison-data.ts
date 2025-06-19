@@ -356,7 +356,7 @@ export const clinicsComparisonData: ClinicComparisonData[] = [
     treatments: ["Haartransplantation", "Barttransplantation", "Augenbrauentransplantation"],
     website: "https://elithairtransplant.com/german/",
     email: "info@elithairtransplant.com",
-    whatsapp: "+90 553 690 9094",
+    whatsapp: "+4915792472424",
     leadDoctor: "Dr. Balwi",
     foundedYear: 2013,
     treatmentsCount: "100.000+",
