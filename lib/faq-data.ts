@@ -127,5 +127,29 @@ export const faqItems: FaqItem[] = [
   {
     question: "Was ist PRP-Therapie und wird sie nach einer Haartransplantation empfohlen?",
     answer: "Die PRP (Platelet-Rich Plasma)-Therapie beinhaltet die Injektion einer konzentrierten Lösung Ihrer eigenen Blutplättchen in die Kopfhaut. Sie wird oft nach einer Haartransplantation empfohlen, um die Heilung zu beschleunigen, das Haarwachstum anzuregen und vorhandene Follikel zu stärken. Viele Kliniken bieten sie als Teil ihres postoperativen Pflegepakets an."
+  },
+  {
+    question: "Welche Finanzierungsmöglichkeiten gibt es für Haartransplantationen in der Türkei?",
+    answer: "Einige Kliniken bieten Ratenzahlung oder spezielle Finanzierungsmodelle für internationale Patienten an. Informiere dich vorab, ob flexible Zahlungsoptionen oder Kooperationen mit Finanzdienstleistern bestehen."
+  },
+  {
+    question: "Wie läuft die Online-Beratung für eine Haartransplantation in der Türkei ab?",
+    answer: "Viele Kliniken bieten eine kostenlose Online-Beratung an. Du sendest Fotos deiner Haarsituation, erhältst eine individuelle Einschätzung und ein unverbindliches Angebot. Die finale Planung erfolgt dann vor Ort in der Klinik."
+  },
+  {
+    question: "Welche Rolle spielt die Haardichte bei der Planung einer Haartransplantation?",
+    answer: "Die natürliche Haardichte im Spender- und Empfängerbereich beeinflusst das Ergebnis maßgeblich. Eine professionelle Analyse der Haardichte ist entscheidend für eine realistische Planung und ein ästhetisch natürliches Ergebnis."
+  },
+  {
+    question: "Wie unterscheiden sich Haartransplantationen in Istanbul von anderen Städten in der Türkei?",
+    answer: "Istanbul gilt als Zentrum für Haartransplantationen mit der größten Auswahl an spezialisierten Kliniken und erfahrenen Ärzten. Auch in anderen Städten wie Ankara oder Izmir gibt es gute Anbieter, aber die Dichte und Erfahrung ist in Istanbul am höchsten."
+  },
+  {
+    question: "Wie kann ich meine Haartransplantation in der Türkei optimal vorbereiten?",
+    answer: "Vor der OP solltest du blutverdünnende Medikamente absetzen, auf Alkohol und Nikotin verzichten und die Kopfhaut pflegen. Die Klinik gibt dir eine genaue Checkliste für die optimale Vorbereitung."
+  },
+  {
+    question: "Welche Erfahrungen gibt es mit Haartransplantationen bei Frauen in der Türkei?",
+    answer: "Immer mehr Frauen entscheiden sich für eine Haartransplantation in der Türkei. Spezialisierte Kliniken bieten schonende Methoden wie DHI oder SDHI, die besonders für weiblichen Haarausfall geeignet sind."
   }
 ]

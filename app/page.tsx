@@ -8,6 +8,7 @@ import { ContactSection } from "@/components/contact-section"
 import { HomepageJsonLd } from "@/components/homepage-json-ld"
 import { faqItems } from "@/lib/faq-data"
 import { CostComparisonSection } from "@/components/cost-comparison-section"
+import { ClinicsComparisonTable } from "@/components/clinics-comparison-table"
 
 export default function Home() {
   // In a production environment, this would come from environment variables
@@ -23,6 +24,7 @@ export default function Home() {
         <ClinicsList />
         <MethodologySection />
         <CostComparisonSection />
+        <ClinicsComparisonTable />
         <FaqSection />
         <ContactSection />
       </div>
