@@ -17,8 +17,10 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.beste-haarkliniken.de'),
   ...baseMetadata.de,
   alternates: {
+    canonical: '/',
     languages: {
       'de': '/',
     },
@@ -60,11 +62,11 @@ export default function RootLayout({
         <link rel="preload" href="/fonts/geist-regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 
         {/* Social Media Meta Tags */}
-        <SocialMetaTags 
-          title={metadata.title as string} 
-          description={metadata.description as string} 
-          url={baseUrl} 
-          imageUrl={ogImageUrl} 
+        <SocialMetaTags
+          title={metadata.title as string}
+          description={metadata.description as string}
+          url={baseUrl}
+          imageUrl={ogImageUrl}
         />
 
         {/* Favicon */}
@@ -83,9 +85,9 @@ export default function RootLayout({
         {/* End Google Tag Manager */}
 
         {/* Ahrefs Verification */}
-        <Script 
-          src="https://analytics.ahrefs.com/analytics.js" 
-          data-key="Il4ZgvyWhIsL3JJ371FN5w" 
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="Il4ZgvyWhIsL3JJ371FN5w"
           strategy="afterInteractive"
         />
 
@@ -96,9 +98,6 @@ export default function RootLayout({
         {/* Hreflang self-referencing and x-default */}
         <link rel="alternate" href="https://www.beste-haarkliniken.de" hrefLang="de" />
         <link rel="alternate" href="https://www.beste-haarkliniken.de" hrefLang="x-default" />
-
-        {/* Canonical URL for homepage */}
-        <link rel="canonical" href="https://www.beste-haarkliniken.de/" />
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}

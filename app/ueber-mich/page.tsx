@@ -5,6 +5,9 @@ import Script from "next/script"
 export const metadata: Metadata = {
   title: "Über mich | Haartransplantation Istanbul Erfahrung",
   description: "Meine Erfahrung mit Haartransplantation in Istanbul & warum ich beste-haarkliniken.de gegründet habe.",
+  alternates: {
+    canonical: '/ueber-mich',
+  },
 }
 
 export default function UeberMichPage() {

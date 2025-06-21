@@ -1,7 +1,7 @@
 export const metadata = {
   de: {
-    title: "Haartransplantation Türkei Kosten & Preise 2025: Kliniken vergleichen & sparen",
-    description: "Finde transparente Haartransplantation Kosten in der Türkei und vergleiche Preise der besten Kliniken in Istanbul. Erfahre alles über Methoden, Bewertungen und spare bei deiner Haartransplantation.",
+    title: "Die 10 besten Kliniken für Haartransplantation in der Türkei",
+    description: "Vergleiche Kosten & Preise für Haartransplantation in der Türkei. Finde die besten Kliniken in Istanbul, lies Bewertungen und fordere jetzt dein Angebot an.",
     keywords: "haartransplantation türkei, haartransplantation istanbul, haartransplantation kosten, beste haarkliniken, haartransplantation erfahrungen",
   },
 }; 

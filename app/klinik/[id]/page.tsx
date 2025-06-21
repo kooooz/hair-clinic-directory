@@ -71,6 +71,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: metaTitles[params.id] || `${clinic.name} - Haartransplantation in der Türkei | Beste Haarkliniken`,
     description: metaDescriptions[params.id] || clinic.description,
+    alternates: {
+      canonical: `/klinik/${params.id}`,
+    },
   }
 }
 

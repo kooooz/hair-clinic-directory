@@ -5,6 +5,9 @@ import Script from "next/script"
 export const metadata: Metadata = {
   title: "Datenschutz | Beste Haarkliniken",
   description: "Erfahre, wie beste-haarkliniken.de deine Daten schützt, Cookies nutzt und welche Rechte du als Nutzer hast. Transparenz beim Datenschutz.",
+  alternates: {
+    canonical: '/datenschutz',
+  },
 }
 
 export default function DatenschutzPage() {

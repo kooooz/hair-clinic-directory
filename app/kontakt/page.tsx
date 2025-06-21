@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Kontakt: Fragen zu Haartransplantation in der Türkei",
   description:
     "Du hast Fragen oder brauchst Hilfe bei der Wahl deiner Haarklinik in der Türkei? Kontaktiere mich persönlich – ich helfe dir gerne weiter.",
+  alternates: {
+    canonical: '/kontakt',
+  },
 }
 
 export default function KontaktPage() {

@@ -5,6 +5,9 @@ import Script from "next/script"
 export const metadata: Metadata = {
   title: "Impressum | Beste Haarkliniken in Istanbul",
   description: "Impressum von beste-haarkliniken.de: Rechtliche Hinweise, Kontaktdaten und Angaben zum Betreiber gemäß § 5 TMG auf einen Blick.",
+  alternates: {
+    canonical: '/impressum',
+  },
 }
 
 export default function ImpressumPage() {
