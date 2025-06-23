@@ -26,7 +26,7 @@ export function Overview() {
             Zu viele Anbieter, zu viele Versprechen – und ich war komplett überfordert. Ich wusste, dass ich eine
             Haartransplantation in der Türkei machen lassen möchte – aber wem konnte ich vertrauen? Genau deshalb habe
             ich diese Übersicht erstellt: Damit du schnell und sicher deine passende Klinik findest – basierend auf
-            Fakten, Erfahrung und ehrlicher Einschätzung.
+            Fakten, Erfahrung und ehrlicher Einschätzung. Erfahre mehr über die <a href="/" className="underline font-bold">beste Haartransplantation Türkei</a>.
           </p>
           <Link href="#kliniken">
             <Button className="rounded-full font-mono text-xs">Jetzt Top-Kliniken vergleichen</Button>

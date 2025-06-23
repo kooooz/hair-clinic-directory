@@ -151,5 +151,13 @@ export const faqItems: FaqItem[] = [
   {
     question: "Welche Erfahrungen gibt es mit Haartransplantationen bei Frauen in der Türkei?",
     answer: "Immer mehr Frauen entscheiden sich für eine Haartransplantation in der Türkei. Spezialisierte Kliniken bieten schonende Methoden wie DHI oder SDHI, die besonders für weiblichen Haarausfall geeignet sind."
+  },
+  {
+    question: "Was ist die beste Haartransplantation in der Türkei?",
+    answer: "Die beste Haartransplantation Türkei zeichnet sich durch erfahrene Ärzte, moderne Methoden (wie FUE oder DHI), transparente Preise und umfassende Nachsorge aus. Wichtig sind echte Erfahrungsberichte, Vorher-Nachher-Bilder und unabhängige Bewertungen. Jeder Patient hat individuelle Bedürfnisse – daher sollte die Wahl der Klinik gut überlegt sein."
+  },
+  {
+    question: "Wie finde ich die beste Haartransplantationsklinik in der Türkei?",
+    answer: "Achte auf Zertifizierungen, Erfahrung des Ärzteteams, transparente Preisgestaltung und ehrliche Patientenbewertungen. Vergleiche mehrere Anbieter und informiere dich ausführlich über Methoden, Nachsorge und Service. Unsere Plattform hilft dir, die beste Haartransplantation Türkei zu finden."
   }
 ]
