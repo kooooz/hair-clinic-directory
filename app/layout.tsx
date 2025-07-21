@@ -45,7 +45,7 @@ export default function RootLayout({
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": `${baseUrl}/kliniken-vergleichen?search={search_term_string}`
+        "urlTemplate": `${baseUrl}/suche?q={search_term_string}`
       },
       "query-input": "required name=search_term_string"
     }
@@ -71,6 +71,10 @@ export default function RootLayout({
 
         {/* Favicon */}
         <link rel="icon" type="image/svg+xml" href="/flavicon.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="16x16" href="/flavicon.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="32x32" href="/flavicon.svg" />
+        <link rel="shortcut icon" href="/flavicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/flavicon.svg" />
 
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">

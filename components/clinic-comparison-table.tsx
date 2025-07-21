@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useSearchParams } from 'next/navigation'
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
@@ -19,8 +20,10 @@ import {
 } from "@/lib/clinic-comparison-data"
 
 export function ClinicComparisonTable() {
+  const searchParams = useSearchParams()
   const [filteredClinics, setFilteredClinics] = useState<ClinicComparisonData[]>(clinicsComparisonData)
   const [selectedClinics, setSelectedClinics] = useState<string[]>([])
+  const [searchTerm, setSearchTerm] = useState("")
   const [activeFilters, setActiveFilters] = useState({
     methods: [] as string[],
     treatments: [] as string[],
@@ -29,9 +32,26 @@ export function ClinicComparisonTable() {
     priceRange: null as { min: number; max: number } | null,
   })
 
-  // Filtern der Kliniken basierend auf den aktiven Filtern
+  // Handle URL search parameters
+  useEffect(() => {
+    const search = searchParams.get('search') || searchParams.get('q') || ''
+    setSearchTerm(search)
+  }, [searchParams])
+
+  // Filter clinics based on search term and active filters
   useEffect(() => {
     let result = [...clinicsComparisonData]
+
+    // Apply search term filter
+    if (searchTerm) {
+      const searchLower = searchTerm.toLowerCase()
+      result = result.filter(clinic => 
+        clinic.name.toLowerCase().includes(searchLower) ||
+        clinic.methods.some(method => method.toLowerCase().includes(searchLower)) ||
+        clinic.treatments.some(treatment => treatment.toLowerCase().includes(searchLower)) ||
+        clinic.services.some(service => service.toLowerCase().includes(searchLower))
+      )
+    }
 
     // Nach Methoden filtern
     if (activeFilters.methods.length > 0) {
@@ -66,7 +86,7 @@ export function ClinicComparisonTable() {
     }
 
     setFilteredClinics(result)
-  }, [activeFilters])
+  }, [activeFilters, searchTerm])
 
   // Toggle Filter für Methoden
   const toggleMethodFilter = (method: string) => {

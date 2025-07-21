@@ -4,15 +4,27 @@ import { HorizontalDividerLeftAligned } from "@/components/horizontal-divider-le
 import Script from "next/script"
 import { clinicsComparisonData } from "@/lib/clinic-comparison-data"
 
-export const metadata: Metadata = {
-  title: "Beste Haarkliniken Türkei im Vergleich | FUE & DHI",
-  description:
-    "Hier findest du die vollständige Liste aller geprüften Haarkliniken für Haartransplantationen in der Türkei – inklusive Methoden, Preisen und Bewertungen.",
+type Props = {
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
+  const baseUrl = "https://www.beste-haarkliniken.de"
+  const canonicalUrl = `${baseUrl}/kliniken-vergleichen`
+
+  return {
+    title: "Beste Haarkliniken Türkei im Vergleich | FUE & DHI",
+    description:
+      "Hier findest du die vollständige Liste aller geprüften Haarkliniken für Haartransplantationen in der Türkei – inklusive Methoden, Preisen und Bewertungen.",
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  }
 }
 
 export default function KlinikenVergleichenPage() {
   // Base URL für Schema.org
-  const baseUrl = "https://beste-haarkliniken.de"
+  const baseUrl = "https://www.beste-haarkliniken.de"
 
   return (
     <>
