@@ -3,6 +3,7 @@ import { ClinicComparisonTable } from "@/components/clinic-comparison-table"
 import { HorizontalDividerLeftAligned } from "@/components/horizontal-divider-left-aligned"
 import Script from "next/script"
 import { clinicsComparisonData } from "@/lib/clinic-comparison-data"
+import { Suspense } from "react"
 
 type Props = {
   searchParams: { [key: string]: string | string[] | undefined }
@@ -101,8 +102,9 @@ export default function KlinikenVergleichenPage() {
               können. Du kannst nach verschiedenen Kriterien filtern und bis zu drei Kliniken direkt nebeneinander
               vergleichen.
             </p>
-
-            <ClinicComparisonTable />
+            <Suspense fallback={<div>Lade Vergleichstabelle...</div>}>
+              <ClinicComparisonTable />
+            </Suspense>
           </div>
 
           <HorizontalDividerLeftAligned />
